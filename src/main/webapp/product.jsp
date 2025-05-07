@@ -1,11 +1,14 @@
-<%@ page import="com.example.session02_java.bai6.Product" %>
-<%@ page import="java.util.ArrayList" %><%--
+
+<%--
   Created by IntelliJ IDEA.
   User: Lan Anh
   Date: 5/6/2025
   Time: 5:21 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@ page import="com.example.session02_java.bai6.Product" %>
+<%@ page import="java.util.ArrayList" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -30,12 +33,12 @@
             <label for="price">Giá: </label>
             <input type="number" name="price" id="price" required class="border border-gray-300 rounded p-1 w-full mb-2">
             <br>
-            <input type="submit" value="Thêm sản phẩm" class="bg-blue-500 text-white rounded p-1 w-full">
+            <input type="submit" name="action" value="Thêm sản phẩm" class="bg-blue-500 text-white rounded p-1 w-full">
         </div>
     </div>
 </form>
 
-<table class="w-2/5 h-[150px] p-4 bg-white m-auto mt-20" >
+<table class="w-2/5 h-[150px] p-4 bg-white m-auto mt-20">
     <thead>
     <tr>
         <td>ID</td>
@@ -77,3 +80,4 @@
 </table>
 </body>
 </html>
+
